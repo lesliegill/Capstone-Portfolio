@@ -1,0 +1,59 @@
+
+.navbar {
+    opacity:0.9;
+}
+
+.card-img {
+    max-height:450px;
+    max-width:auto;
+    background:cover;
+    opacity: 0.7;
+
+}
+
+.card-title {
+    display:flex;
+    font-size:2em;
+    justify-content:center;
+    align-items:center;
+    margin-top:140px;
+}
+
+
+
+.profile-pic {
+    display:flex;
+    max-width:250px;
+    max-height:200px; 
+    margin:auto;
+   
+}
+
+.container summary {
+}
+
+.lead {
+    text-align:center;
+    padding:2em;
+}
+
+
+.skills {
+    display:flex;
+    justify-content: space-evenly;
+    
+}
+
+.html,
+.css,
+.sass,
+.bootstrap,
+.js,
+.jQuery {
+   
+    max-height:60px;
+    max-width:60px;
+    list-style-type:none;
+    
+    
+}
