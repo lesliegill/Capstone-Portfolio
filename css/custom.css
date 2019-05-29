@@ -1,22 +1,41 @@
+* {
+    box-sizing:border-box;
+}
+
+
 
 .navbar {
     opacity:0.9;
 }
 
 .card-img {
-    max-height:450px;
+    -webkit-background-size: cover;
     max-width:auto;
     background:cover;
-    opacity: 0.7;
-
+    opacity: 0.8;
 }
+
 
 .card-title {
     display:flex;
+    font-family: 'Roboto', sans-serif;
     font-size:2em;
     justify-content:center;
     align-items:center;
     margin-top:140px;
+}
+
+
+
+
+
+.developer {
+    font-size:1em;
+}
+.arrow {
+    display:none;
+    margin-top:30px;
+    font-size:2em;
 }
 
 
@@ -29,31 +48,147 @@
    
 }
 
-.container summary {
-}
 
 .lead {
     text-align:center;
     padding:2em;
+    
 }
+
 
 
 .skills {
     display:flex;
-    justify-content: space-evenly;
+    justify-content: space-evenly; 
+    font-size:1.5em;
     
 }
 
-.html,
-.css,
-.sass,
-.bootstrap,
-.js,
-.jQuery {
-   
-    max-height:60px;
-    max-width:60px;
-    list-style-type:none;
+
+
+
+.project-img {
+    position:relative;
+    height:400px;
+    width:100%;
+}
+
+
+.card-text {
+    color:#fff;
+    font-size:1.5em;
+}
+
+
+
+.background {
+    background-image: url(../images/blacks-sand.jpg);
+}
+
+.projects {
+    padding-top:1em;
+    font-size:3em;
+}
+
+
+
+.navbar-brand {
+    margin:auto;
+    font-size:1em;
+}
+
+
+/*overlay*/
+
+.ovl {
+  opacity:0;
+}
+
+
+
+.ovl:hover {
+    opacity:.8;
+    background:black;
+    font-size:10px;
+    height:400px;
+    width:100%;
+    position:absolute;
     
     
+}
+
+
+
+.card-title,
+.btn {
+    color:white;
+}
+
+.row {
+    padding-top:2em;
+    padding-bottom:2em;
+}
+
+
+
+.github,
+.linkedin {
+  font-size:50px;
+  padding:10px;
+  color:black;
+ 
+}
+
+
+.github:hover {
+   color:#5E3191;
+}
+
+.linkedin:hover {
+    color:#1D99CC;
+}
+
+.email {
+    padding-top:10px;
+    padding-bottom:70px;
+    font-size:1.3em;
+    color:black;
+}
+
+
+a:hover {
+    color:grey;
+    
+}
+
+@media (min-width:768px) {
+    .arrow {
+        display:block;
+        margin-top:100px;
+        font-size:2em;
+    }
+
+.card-title {
+    font-size:3em;
+
+}
+
+}
+
+@media (min-width:922px) {
+ 
+}
+
+[data-scroll] {
+    transition:all 2s;
+}
+
+[data-scroll="in"] {
+    opacity:1;
+    transform:translateX(0);
+}
+
+[data-scroll="out"] {
+    opacity:0;
+    transform:translateX(-200px);
 }
