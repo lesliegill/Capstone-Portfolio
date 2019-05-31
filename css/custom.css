@@ -23,9 +23,7 @@
 /***COVER***/
 
 .card-img {
-    -webkit-background-size: cover;
-    max-width:auto;
-    background:cover;
+    background-size: cover;
     opacity: 0.8;
 }
 
@@ -322,4 +320,3 @@ html {
 
 
 }
-
