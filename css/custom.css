@@ -56,9 +56,9 @@
 /***ABOUT***/
 
 .profile-pic {
-    display:flex;
-    max-width:250px;
-    max-height:200px; 
+    
+    width:150px;
+    height:200px; 
     margin:auto;
 }
 
@@ -146,7 +146,6 @@
 
 
 
-
 /***OVERLAY***/
 
 .ovl {
@@ -156,7 +155,7 @@
 .ovl:hover {
   background-color:black;
   opacity:.8;
-  transition: .4s ease-in-out; 
+  transition: .5s ease-in-out; 
 }
 
 .btn {
