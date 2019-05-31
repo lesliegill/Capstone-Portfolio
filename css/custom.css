@@ -3,10 +3,24 @@
 }
 
 
+/***NAV***/
 
 .navbar {
     opacity:0.9;
 }
+
+
+.navbar-brand {
+    margin:auto;
+    font-size:1em;
+}
+
+.nav-item {
+    font-size:1.2em;
+}
+
+
+/***COVER***/
 
 .card-img {
     -webkit-background-size: cover;
@@ -19,64 +33,97 @@
 .card-title {
     display:flex;
     font-family: 'Roboto', sans-serif;
-    font-size:2em;
+    font-size:3em;
     justify-content:center;
     align-items:center;
-    margin-top:140px;
+    margin-top:120px;
 }
-
-
 
 
 
 .developer {
     font-size:1em;
 }
+
+
 .arrow {
     display:none;
-    margin-top:30px;
-    font-size:2em;
 }
 
 
+
+
+/***ABOUT***/
 
 .profile-pic {
     display:flex;
     max-width:250px;
     max-height:200px; 
     margin:auto;
-   
 }
 
+
+
+#about {
+   background-color:#C8C8C8;
+}
+
+.about-me {
+    font-size:2em;
+
+}
 
 .lead {
     text-align:center;
     padding:2em;
+    color:black;
     
 }
 
-
-
-.skills {
+.icons {
     display:flex;
     justify-content: space-evenly; 
-    font-size:1.5em;
-    
 }
 
-
-
-
-.project-img {
-    position:relative;
-    height:400px;
-    width:100%;
+.skills li {
+    list-style-type:none;
 }
 
+.icons svg {
+    width:45px;
+    height:45px;
+}
 
 .card-text {
     color:#fff;
-    font-size:1.5em;
+    font-size:1em;
+}
+
+
+
+
+/***PROJECTS***/
+
+.project-container {
+    transition:all .3s ease;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+
+.project-title {
+    font-size:2em;
+    color:#fff;
+    padding-top:1em;
+}
+
+
+.project-text {
+    font-size:1em;
+    color:#61A6A9;
+    padding-top:.5em;
+    padding-bottom:.5em;
 }
 
 
@@ -92,52 +139,45 @@
 
 
 
-.navbar-brand {
-    margin:auto;
-    font-size:1em;
+.project-img {
+    height:300px;
+    width:100%;
 }
 
 
-/*overlay*/
+
+
+/***OVERLAY***/
 
 .ovl {
   opacity:0;
 }
 
-
-
 .ovl:hover {
-    opacity:.8;
-    background:black;
-    font-size:10px;
-    height:400px;
-    width:100%;
-    position:absolute;
-    
-    
+  background-color:black;
+  opacity:.8;
+  transition: .4s ease-in-out; 
 }
 
-
-
-.card-title,
 .btn {
     color:white;
 }
 
-.row {
-    padding-top:2em;
-    padding-bottom:2em;
+.col-sm {
+   padding:1.5em;
 }
 
-
+.connect {
+    font-size:2em;
+}
 
 .github,
 .linkedin {
-  font-size:50px;
+  font-size:60px;
   padding:10px;
   color:black;
- 
 }
+
 
 
 .github:hover {
@@ -149,8 +189,8 @@
 }
 
 .email {
-    padding-top:10px;
-    padding-bottom:70px;
+    padding-top:30px;
+    padding-bottom:100px;
     font-size:1.3em;
     color:black;
 }
@@ -158,26 +198,12 @@
 
 a:hover {
     color:grey;
-    
 }
 
-@media (min-width:768px) {
-    .arrow {
-        display:block;
-        margin-top:100px;
-        font-size:2em;
-    }
 
-.card-title {
-    font-size:3em;
 
-}
 
-}
-
-@media (min-width:922px) {
- 
-}
+/***ICONS ANIMATION***/
 
 [data-scroll] {
     transition:all 2s;
@@ -191,4 +217,98 @@ a:hover {
 [data-scroll="out"] {
     opacity:0;
     transform:translateX(-200px);
+} 
+
+
+
+
+@media (min-width:570px) {
+
+.projects {
+    font-size:2em;
 }
+
+.project-title {
+    font-size:1.2em;
+}
+
+.project-text {
+    font-size:.9em;
+}
+
+.btn {
+    font-size:.7em;
+}
+
+}
+
+
+@media (min-width:768px) {
+
+.card-title {
+    margin-top:140px;
+}
+
+    .arrow {
+        display:block;
+        margin-top:100px;
+        font-size:2em;
+    }
+
+.card-title {
+    font-size:5em;
+}
+
+
+.developer {
+    font-size:2em;
+    font-family:sans-serif;
+}
+
+.row {
+    padding:2em;
+    }
+
+
+.project-title {
+    font-size:1.5em;
+
+}
+
+.project-text {
+    font-size:1em;
+}
+
+.btn {
+    font-size:1em;
+}
+
+}
+
+
+
+@media (min-width:922px) {
+ 
+.projects {
+    font-size:3em;
+}
+
+.project-title {
+    font-size:2em;
+  
+}
+
+.project-text {
+    font-size:1em;
+   
+    
+}
+
+.btn {
+    font-size:1em;
+}
+
+
+
+}
+

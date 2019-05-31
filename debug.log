@@ -1,3 +1,5 @@
 [0522/122828.703:ERROR:process_info.cc(359)] UncheckedAllocate
 [0522/122828.963:ERROR:filesystem_win.cc(148)] DeleteFile C:\Users\gilma\AppData\Local\Google\Chrome\User Data\Crashpad\reports\863b9ec0-8ebc-41af-80c3-db8fe1e67b82.dmp: The process cannot access the file because it is being used by another process. (0x20)
 [0528/082632.408:ERROR:process_info.cc(359)] UncheckedAllocate
+[0529/125358.537:ERROR:process_info.cc(359)] UncheckedAllocate
+[0529/164830.096:ERROR:process_info.cc(359)] UncheckedAllocate
