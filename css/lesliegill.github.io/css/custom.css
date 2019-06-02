@@ -61,26 +61,28 @@
     margin:auto;
 }
 
-.about-skills {
-    background-color:#CBCCCC;
-    padding-bottom:15px;
 
+
+#about {
+   background-color:#C8C8C8;
+   
 }
 
 .about-me {
     font-size:2em;
+
 }
 
 .lead {
     text-align:center;
     padding:2em;
     color:black;
+    
 }
 
 .icons {
     display:flex;
     justify-content: space-evenly; 
-
     
 }
 
@@ -98,10 +100,7 @@
     font-size:1em;
 }
 
-ul.icons {
-    margin:0;
-    padding:0;
-}
+
 
 
 /***PROJECTS***/
@@ -134,7 +133,6 @@ ul.icons {
     background-image: url(../images/blacks-sand.jpg);
 }
 
-
 .projects {
     padding:2.4em;
     font-size:3em;
@@ -158,7 +156,7 @@ ul.icons {
 .ovl:hover {
   background-color:black;
   opacity:.8;
-  transition: .6s ease-in-out; 
+  transition: .5s ease-in-out; 
 }
 
 .btn {
@@ -169,20 +167,9 @@ ul.icons {
    padding:1.5em;
 }
 
-
-
-/***Contact***/
-
-
 .connect {
     font-size:2em;
 }
-
-
-.contact-info {
-    background-color:#CBCCCC;
-}
-
 
 .github,
 .linkedin {
